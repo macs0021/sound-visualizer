@@ -16,7 +16,7 @@ public class CubeCreator : MonoBehaviour
 
         for (int i = 0; i < cubesNumber; i++)
         {
-            _cubes[i] = Instantiate(cube, new Vector3(i, 0, 0), Quaternion.identity);
+            _cubes[i] = Instantiate(cube, new Vector3(i/3, 0, 0), Quaternion.identity);
         }
     }
     private void Update()
